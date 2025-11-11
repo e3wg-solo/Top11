@@ -92,6 +92,15 @@ export const metadata: Metadata = {
   },
   category: "beauty",
   classification: "Beauty Salon",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    apple: [
+      { url: "/favicon.ico", sizes: "180x180", type: "image/x-icon" },
+    ],
+  },
   other: {
     "geo.region": "RU-MOS",
     "geo.placename": "Боброво",
@@ -122,6 +131,11 @@ export default function RootLayout({
     <html lang="ru" className="dark">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Favicon links */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         {/* Local SF Pro Display Font Preloads */}
         <link rel="preload" href="/fonts/SF-Pro-Display-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/SF-Pro-Display-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
