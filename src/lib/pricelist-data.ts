@@ -472,7 +472,7 @@ export const pricelistData: PriceItem[] = [
     categoryId: "hairdressing",
     categoryName: "Парикмахерский зал",
     name: "Стрижка одним срезом",
-    price: "1500 ₽",
+    price: "1000 ₽",
     duration: "15м"
   },
 
